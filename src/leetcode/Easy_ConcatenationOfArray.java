@@ -11,8 +11,26 @@ import java.util.Arrays;
 public class Easy_ConcatenationOfArray {
 
 	public static void main(String[] args) {
-		int[] nums = new int[] {1, 2, 3, 4, 5, 6};
-		System.out.println(Arrays.toString(getConcatenation(nums)));
+		int[] nums = new int[] {1, 5, 1, 5, 3, 3, 4};
+		System.out.println(Math.ceil(3.65));
+		System.out.println(Math.ceil(3.35));
+		System.out.println(Math.ceil(3.34));
+
+
+		System.out.println(Math.floor(3.65));
+		System.out.println(Math.floor(3.35));
+		System.out.println(Math.floor(3.34));
+		//System.out.println(oddNumber(nums));
+		//System.out.println(Arrays.toString(getConcatenation(nums)));
+	}
+
+	private static int oddNumber(int[] nums) {
+		int num = 0;
+		int size = nums.length;
+		for (int i = 0; i < size; i++) {
+			num ^= nums[i];
+		}
+		return num;
 	}
 
 	private static int[] getConcatenation(int[] nums) {
